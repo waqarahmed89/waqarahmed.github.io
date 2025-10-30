@@ -1,0 +1,124 @@
+---
+layout: default
+title: Archive
+---
+
+<div class="archive-page">
+    <h1>Archive</h1>
+    
+    <div class="archive-content">
+        {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+        
+        {% for year in posts_by_year %}
+            <div class="archive-year">
+                <h2 class="year-heading">{{ year.name }}</h2>
+                
+                <div class="posts-list">
+                    {% for post in year.items %}
+                        <article class="archive-post">
+                            <div class="post-date">
+                                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post-title">
+                                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                                </h3>
+                                {% if post.categories.size > 0 %}
+                                    <div class="post-categories">
+                                        {% for category in post.categories %}
+                                            <span class="category">{{ category }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+        
+        {% if site.posts.size == 0 %}
+            <p class="no-posts">No posts yet. Check back soon!</p>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+.archive-year {
+    margin-bottom: 3rem;
+}
+
+.year-heading {
+    font-size: 1.5rem;
+    color: #3182ce;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.archive-post {
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.archive-post:last-child {
+    border-bottom: none;
+}
+
+.post-date {
+    min-width: 80px;
+    color: #718096;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+
+.post-info {
+    flex: 1;
+}
+
+.archive-post .post-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.archive-post .post-title a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.archive-post .post-title a:hover {
+    color: #3182ce;
+}
+
+.post-categories {
+    margin-top: 0.5rem;
+}
+
+.post-categories .category {
+    background: #e2e8f0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    color: #4a5568;
+}
+
+.no-posts {
+    text-align: center;
+    color: #718096;
+    font-style: italic;
+    margin: 4rem 0;
+}
+
+@media (max-width: 768px) {
+    .archive-post {
+        flex-direction: column;
+    }
+    
+    .post-date {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+</style>

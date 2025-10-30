@@ -1,0 +1,65 @@
+# Site settings
+title: "Pushing the Limits of AI & High-Performance Computing"
+description: "AI and high-performance computing research, hands-on learnings, and practical insights"
+baseurl: ""
+url: "https://waqarahmed89.github.io"
+author:
+  name: "Waqar Ahmed"
+  email: "waqarahmed4544@gmail.com"
+  linkedin: "https://www.linkedin.com/in/waqarahmed1989/"
+  github: "https://github.com/waqarahmed89"
+  scholar: "https://scholar.google.com/citations?user=2I-M3S0AAAAJ&hl=en&oi=ao"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Default YAML front matter
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: "Waqar Ahmed"
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor/
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true

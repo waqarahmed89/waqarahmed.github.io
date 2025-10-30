@@ -1,0 +1,116 @@
+---
+layout: default
+title: "404 - Page Not Found"
+permalink: /404.html
+---
+
+<div class="error-page">
+    <div class="error-content">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-description">
+            Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or you entered the wrong URL.
+        </p>
+        <div class="error-actions">
+            <a href="{{ '/' | relative_url }}" class="btn-primary">Go Home</a>
+            <a href="{{ '/archive' | relative_url }}" class="btn-secondary">Browse Archive</a>
+        </div>
+    </div>
+</div>
+
+<style>
+.error-page {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-content {
+    max-width: 500px;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    line-height: 1;
+}
+
+.error-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #1a1a1a;
+}
+
+.error-description {
+    font-size: 1.1rem;
+    color: #718096;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #3182ce;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2c5aa0;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #3182ce;
+    border: 2px solid #3182ce;
+}
+
+.btn-secondary:hover {
+    background: #3182ce;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 6rem;
+    }
+    
+    .error-title {
+        font-size: 1.5rem;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 200px;
+    }
+}
+</style>
