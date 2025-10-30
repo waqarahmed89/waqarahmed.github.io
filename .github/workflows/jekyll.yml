@@ -3,8 +3,6 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build-and-deploy:
@@ -17,7 +15,7 @@ jobs:
     
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://waqarahmed89.github.io
     
     steps:
       - name: Checkout
@@ -29,13 +27,9 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
       
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-      
       - name: Build Jekyll site
         run: |
-          bundle exec jekyll build --baseurl ""
+          bundle exec jekyll build --destination ./_site --baseurl "" --url "https://waqarahmed89.github.io"
         env:
           JEKYLL_ENV: production
       
