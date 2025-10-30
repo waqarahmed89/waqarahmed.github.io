@@ -8,7 +8,11 @@ title: About
     <section class="about-hero">
         <div class="hero-content">
             <h1 class="page-title">About Me</h1>
-            <p class="hero-subtitle">AI Researcher & High-Performance Computing Specialist</p>
+            <p class="hero-subtitle">
+                <span class="subtitle-line">AI Researcher</span>
+                <span class="subtitle-connector">&</span>
+                <span class="subtitle-line">High-Performance Computing Specialist</span>
+            </p>
         </div>
     </section>
 
@@ -219,6 +223,21 @@ title: About
     color: #3182ce;
     font-weight: 500;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.subtitle-line {
+    display: block;
+}
+
+.subtitle-connector {
+    display: block;
+    font-size: 1.1rem;
+    color: #3182ce;
+    margin: 0.2rem 0;
 }
 
 .about-content {
@@ -480,6 +499,14 @@ title: About
     
     .page-title {
         font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .subtitle-connector {
+        font-size: 1rem;
     }
     
     .expertise-grid {
