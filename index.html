@@ -3,6 +3,12 @@ layout: default
 ---
 
 <div class="home">
+    <!-- Main Title Section -->
+    <section class="main-title-section">
+        <h1 class="main-title">Pushing the Limits of AI & High-Performance Computing</h1>
+        <p class="main-description">AI and high-performance computing research, hands-on learnings, and practical insights</p>
+    </section>
+
     <!-- Hero Section with Photo and Biography -->
     <section class="hero-section">
         <div class="hero-content">
@@ -10,7 +16,6 @@ layout: default
                 <img src="/assets/images/waqahmed_photo.jpg" alt="Waqar Ahmed" class="profile-img">
             </div>
             <div class="bio-content">
-                <h1 class="hero-title">Pushing the Limits of AI & High-Performance Computing</h1>
                 <h2 class="hero-name">Waqar Ahmed</h2>
                 <p class="hero-subtitle">AI Researcher & High-Performance Computing Specialist</p>
                 <div class="bio-text">
@@ -117,10 +122,34 @@ layout: default
 </div>
 
 <style>
+.main-title-section {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+
+.main-description {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero-section {
     padding: 3rem 0 4rem 0;
     background: linear-gradient(135deg, #f8faff 0%, #e6f3ff 100%);
-    margin: -2rem -2rem 4rem -2rem;
+    margin: 0 -2rem 4rem -2rem;
 }
 
 .hero-content {
@@ -149,16 +178,8 @@ layout: default
     flex: 1;
 }
 
-.hero-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #3182ce;
-    margin: 0 0 1rem 0;
-    line-height: 1.2;
-}
-
 .hero-name {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #1a1a1a;
     margin: 0 0 0.5rem 0;
@@ -375,6 +396,15 @@ layout: default
 }
 
 @media (max-width: 768px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .main-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -382,12 +412,8 @@ layout: default
         padding: 0 1rem;
     }
     
-    .hero-title {
-        font-size: 1.6rem;
-    }
-    
     .hero-name {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .posts-grid {
