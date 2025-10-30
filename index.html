@@ -5,7 +5,11 @@ layout: default
 <div class="home">
     <!-- Main Title Section -->
     <section class="main-title-section">
-        <h1 class="main-title">Pushing the Limits of AI & High-Performance Computing</h1>
+        <h1 class="main-title">
+            <span class="title-line">Pushing the Limits of AI</span>
+            <span class="title-connector">&</span>
+            <span class="title-line">High-Performance Computing</span>
+        </h1>
         <p class="main-description">AI and high-performance computing research, hands-on learnings, and practical insights</p>
     </section>
 
@@ -133,7 +137,21 @@ layout: default
     font-weight: 700;
     color: #1a1a1a;
     margin: 0 0 1rem 0;
-    line-height: 1.2;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-line {
+    display: block;
+}
+
+.title-connector {
+    display: block;
+    font-size: 2rem;
+    color: #3182ce;
+    margin: 0.2rem 0;
 }
 
 .main-description {
@@ -397,7 +415,11 @@ layout: default
 
 @media (max-width: 768px) {
     .main-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+    
+    .title-connector {
+        font-size: 1.4rem;
     }
     
     .main-description {
