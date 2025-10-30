@@ -9,8 +9,7 @@ title: About
         <div class="hero-content">
             <h1 class="page-title">About Me</h1>
             <p class="hero-subtitle">
-                <span class="subtitle-line">AI Researcher</span>
-                <span class="subtitle-connector">&</span>
+                <span class="subtitle-line">AI Researcher &</span>
                 <span class="subtitle-line">High-Performance Computing Specialist</span>
             </p>
         </div>
@@ -497,8 +496,13 @@ title: About
         padding: 0 1rem;
     }
     
+    .about-hero {
+        margin: -2rem -1rem 2rem -1rem;
+        padding: 2rem 0;
+    }
+    
     .page-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .hero-subtitle {
@@ -525,6 +529,33 @@ title: About
     
     .mission-box {
         padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        margin: -2rem -0.5rem 1.5rem -0.5rem;
+        padding: 1.5rem 0;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .subtitle-connector {
+        font-size: 0.9rem;
+    }
+    
+    .expertise-item {
+        padding: 1.5rem;
+    }
+    
+    .mission-box {
+        padding: 1.5rem 1rem;
     }
 }
 </style>

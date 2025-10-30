@@ -168,6 +168,7 @@ layout: default
     padding: 3rem 0 4rem 0;
     background: linear-gradient(135deg, #f8faff 0%, #e6f3ff 100%);
     margin: 0 -2rem 4rem -2rem;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -427,15 +428,34 @@ layout: default
         padding: 0 1rem;
     }
     
+    .hero-section {
+        margin: 0 -1rem 3rem -1rem;
+        padding: 2rem 0 3rem 0;
+    }
+    
     .hero-content {
         flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
         padding: 0 1rem;
+        max-width: 100%;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
     }
     
     .hero-name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .bio-text p {
+        font-size: 1rem;
     }
     
     .posts-grid {
@@ -449,6 +469,51 @@ layout: default
     }
     
     .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.4rem;
+    }
+    
+    .title-connector {
+        font-size: 1.2rem;
+    }
+    
+    .hero-section {
+        margin: 0 -0.5rem 2rem -0.5rem;
+        padding: 1.5rem 0 2rem 0;
+    }
+    
+    .hero-content {
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .hero-name {
+        font-size: 1.4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .social-link {
+        width: 100%;
+        max-width: 200px;
         justify-content: center;
     }
 }
