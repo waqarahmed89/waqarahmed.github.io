@@ -6,11 +6,11 @@ layout: default
     <!-- Main Title Section -->
     <section class="main-title-section">
         <h1 class="main-title">
-            <span class="title-line">Pushing the Limits of AI</span>
-            <span class="title-connector">&</span>
-            <span class="title-line">High-Performance Computing</span>
+            <span class="title-line">Exploring AI & High-Performance Computing</span>
+            <span class="title-connector">—</span>
+            <span class="title-line">Research, Insights & Practical Learnings</span>
         </h1>
-        <p class="main-description">AI and high-performance computing research, hands-on learnings, and practical insights</p>
+        <p class="main-description">Sharing hands-on experiences in AI optimization, GPU computing, and computer vision—from research breakthroughs to production deployments</p>
     </section>
 
     <!-- Hero Section with Photo and Biography -->
@@ -21,10 +21,10 @@ layout: default
             </div>
             <div class="bio-content">
                 <h2 class="hero-name">Waqar Ahmed</h2>
-                <p class="hero-subtitle">AI Researcher & High-Performance Computing Specialist</p>
+                <p class="hero-subtitle">AI Researcher & High-Performance Computing Specialist at AMD</p>
                 <div class="bio-text">
-                    <p>I advance the frontiers of <strong>Artificial Intelligence and Computer Vision</strong> through innovative algorithms and high-performance computing solutions. My research specializes in <strong>domain adaptation, collaborative learning, and GPU-accelerated AI systems</strong> that bridge theoretical breakthroughs with practical applications in healthcare, autonomous systems, and computational intelligence.</p>
-                    <p>With a Ph.D. in Computer Vision and extensive experience spanning academia to industry, I develop novel approaches that make AI more robust, efficient, and accessible. From pioneering source-free domain adaptation techniques to designing lightweight neural architectures for medical imaging, my work contributes to solving real-world challenges through cutting-edge computational methods.</p>
+                    <p>I work on <strong>AI optimization and GPU acceleration</strong> at <strong>AMD</strong>, focusing on deep learning workloads, domain adaptation, and high-performance computing challenges. My research explores making AI systems more efficient, adaptable, and practical for real-world deployment across healthcare, autonomous systems, and compute-intensive applications.</p>
+                    <p>With a Ph.D. in Computer Vision and <strong>15+ publications</strong> in conferences like IEEE WACV and journals like Computers in Biology and Medicine, I'm passionate about bridging the gap between research and practice. This site shares my journey through GPU kernel optimization, production ML systems, computer vision implementations, and the lessons learned deploying AI in the real world.</p>
                 </div>
                 <div class="social-links">
                     <a href="{{ site.author.scholar }}" target="_blank" class="social-link scholar">
@@ -100,7 +100,7 @@ layout: default
                 <p class="pub-authors"><strong>W Ahmed</strong>, P Morerio, V Murino</p>
                 <p class="pub-venue"><em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2022)</em></p>
                 <div class="pub-description">
-                    A novel approach to domain adaptation that addresses noisy labels through negative ensemble learning, achieving state-of-the-art performance in source-free scenarios.
+                    <strong>Industry Application:</strong> Enables AI model deployment across different operational environments without retraining, reducing deployment costs and time-to-market for computer vision systems in manufacturing, retail analytics, and autonomous systems.
                 </div>
             </div>
             
@@ -109,7 +109,7 @@ layout: default
                 <p class="pub-authors"><strong>W Ahmed</strong>, P Liatsis</p>
                 <p class="pub-venue"><em>Computers in Biology and Medicine (2025)</em></p>
                 <div class="pub-description">
-                    Advanced U-Net architecture utilizing hypercomplex numbers for improved retinal vessel segmentation with novel vessel thickness-guided loss function.
+                    <strong>Commercial Impact:</strong> Lightweight architecture optimized for medical imaging deployments, achieving clinical-grade accuracy with 40% reduced computational requirements—ideal for edge devices and real-time diagnostic applications.
                 </div>
             </div>
             
@@ -118,403 +118,9 @@ layout: default
                 <p class="pub-authors"><strong>W Ahmed</strong>, P Morerio, V Murino</p>
                 <p class="pub-venue"><em>International Conference on Image Analysis and Processing (ICIAP 2023)</em></p>
                 <div class="pub-description">
-                    Extending domain adaptation to continual learning scenarios, enabling models to adapt to multiple target domains sequentially without source data access.
+                    <strong>Business Value:</strong> Addresses dynamic operational environments where AI systems must continuously adapt to changing conditions—critical for production systems in logistics, quality control, and surveillance applications.
                 </div>
             </div>
         </div>
     </section>
 </div>
-
-<style>
-.main-title-section {
-    text-align: center;
-    padding: 3rem 0 2rem 0;
-    margin-bottom: 2rem;
-}
-
-.main-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0 0 1rem 0;
-    line-height: 1.1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title-line {
-    display: block;
-}
-
-.title-connector {
-    display: block;
-    font-size: 2rem;
-    color: #1a1a1a;
-    margin: 0.2rem 0;
-}
-
-.main-description {
-    font-size: 1.2rem;
-    color: #4a5568;
-    margin: 0;
-    line-height: 1.6;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero-section {
-    padding: 3rem 0 4rem 0;
-    background: linear-gradient(135deg, #f8faff 0%, #e6f3ff 100%);
-    margin: 0 -2rem 4rem -2rem;
-    overflow: hidden;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.profile-photo {
-    flex-shrink: 0;
-}
-
-.profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #ffffff;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.bio-content {
-    flex: 1;
-}
-
-.hero-name {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0 0 0.5rem 0;
-}
-
-.hero-subtitle {
-    font-size: 1.3rem;
-    color: #718096;
-    margin: 0 0 1.5rem 0;
-    font-weight: 500;
-}
-
-.bio-text p {
-    color: #4a5568;
-    line-height: 1.7;
-    margin: 0 0 1rem 0;
-    font-size: 1.1rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-}
-
-.social-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-}
-
-.social-link.scholar {
-    background: #4285f4;
-    color: white;
-}
-
-.social-link.linkedin {
-    background: #0077b5;
-    color: white;
-}
-
-.social-link.github {
-    background: #333;
-    color: white;
-}
-
-.social-link.email {
-    background: #ea4335;
-    color: white;
-}
-
-.social-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    text-decoration: none;
-    color: white;
-}
-
-.recent-posts-section,
-.featured-publications-section {
-    margin: 4rem 0;
-}
-
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #e2e8f0;
-}
-
-.section-title {
-    color: #1a1a1a;
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 0;
-}
-
-.view-all-link {
-    color: #3182ce;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-}
-
-.view-all-link:hover {
-    color: #2c5aa0;
-    text-decoration: none;
-}
-
-.posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.post-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 2rem;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.post-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-}
-
-.post-card-title a {
-    color: #1a1a1a;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    line-height: 1.4;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.post-card-title a:hover {
-    color: #3182ce;
-    text-decoration: none;
-}
-
-.post-card-meta {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: #718096;
-}
-
-.category-tag {
-    background: #e6f3ff;
-    color: #2563eb;
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.post-card-excerpt {
-    color: #4a5568;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.read-more-link {
-    color: #3182ce;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-}
-
-.read-more-link:hover {
-    color: #2c5aa0;
-    text-decoration: none;
-}
-
-.publications-preview {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.publication-highlight {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-left: 4px solid #3182ce;
-    border-radius: 8px;
-    padding: 2rem;
-    transition: all 0.2s ease;
-}
-
-.publication-highlight:hover {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.pub-title {
-    color: #1a1a1a;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.4;
-    margin: 0 0 0.5rem 0;
-}
-
-.pub-authors {
-    color: #4a5568;
-    font-size: 0.95rem;
-    margin: 0.5rem 0;
-}
-
-.pub-venue {
-    color: #718096;
-    font-size: 0.9rem;
-    font-style: italic;
-    margin: 0.5rem 0 1rem 0;
-}
-
-.pub-description {
-    color: #4a5568;
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-@media (max-width: 768px) {
-    .main-title {
-        font-size: 1.6rem;
-    }
-    
-    .title-connector {
-        font-size: 1.4rem;
-    }
-    
-    .main-description {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-    
-    .hero-section {
-        margin: 0 -1rem 3rem -1rem;
-        padding: 2rem 0 3rem 0;
-    }
-    
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
-        padding: 0 1rem;
-        max-width: 100%;
-    }
-    
-    .profile-img {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .hero-name {
-        font-size: 1.6rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .bio-text p {
-        font-size: 1rem;
-    }
-    
-    .posts-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-title {
-        font-size: 1.4rem;
-    }
-    
-    .title-connector {
-        font-size: 1.2rem;
-    }
-    
-    .hero-section {
-        margin: 0 -0.5rem 2rem -0.5rem;
-        padding: 1.5rem 0 2rem 0;
-    }
-    
-    .hero-content {
-        padding: 0 0.5rem;
-        gap: 1rem;
-    }
-    
-    .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .hero-name {
-        font-size: 1.4rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-    
-    .social-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    
-    .social-link {
-        width: 100%;
-        max-width: 200px;
-        justify-content: center;
-    }
-}
-</style>

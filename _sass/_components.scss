@@ -1,0 +1,217 @@
+// Buttons and CTAs
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-sm;
+    padding: 0.75rem $spacing-lg;
+    background: $primary-color;
+    color: white;
+    border-radius: $radius-md;
+    text-decoration: none;
+    font-weight: $font-weight-medium;
+    transition: all $transition-base;
+    border: none;
+    cursor: pointer;
+    
+    &:hover {
+        background: $primary-dark;
+        transform: translateY(-2px);
+        box-shadow: $shadow-md;
+        text-decoration: none;
+        color: white;
+    }
+    
+    &.btn-secondary {
+        background: $bg-secondary;
+        color: $text-primary;
+        border: 1px solid $border-color;
+        
+        &:hover {
+            background: $bg-accent;
+            border-color: $primary-color;
+        }
+    }
+}
+
+// Cards
+.card {
+    background: $bg-primary;
+    border: 1px solid $border-color;
+    border-radius: $radius-xl;
+    padding: $spacing-xl;
+    transition: all $transition-base;
+    box-shadow: $shadow-sm;
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-lg;
+    }
+}
+
+// Section styling
+.section {
+    margin: $spacing-3xl 0;
+    
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $spacing-xl;
+        padding-bottom: $spacing-md;
+        border-bottom: 2px solid $border-color;
+        
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: $spacing-md;
+        }
+    }
+    
+    &-title {
+        color: $text-primary;
+        font-size: $font-size-2xl;
+        font-weight: $font-weight-semibold;
+        margin: 0;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: $primary-color;
+        }
+    }
+}
+
+// Social links
+.social-links {
+    display: flex;
+    gap: $spacing-md;
+    flex-wrap: wrap;
+    
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: $spacing-sm;
+        padding: $spacing-sm $spacing-md;
+        border-radius: $radius-md;
+        text-decoration: none;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-sm;
+        transition: all $transition-base;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: $shadow-md;
+            text-decoration: none;
+        }
+        
+        &.scholar {
+            background: $scholar-color;
+            color: white;
+            &:hover { opacity: 0.9; color: white; }
+        }
+        
+        &.linkedin {
+            background: $linkedin-color;
+            color: white;
+            &:hover { opacity: 0.9; color: white; }
+        }
+        
+        &.github {
+            background: $github-color;
+            color: white;
+            &:hover { opacity: 0.9; color: white; }
+        }
+        
+        &.email {
+            background: $email-color;
+            color: white;
+            &:hover { opacity: 0.9; color: white; }
+        }
+    }
+}
+
+// Tags and categories
+.tag, .category-tag {
+    display: inline-block;
+    background: #e6f3ff;
+    color: $primary-color;
+    padding: 0.2rem 0.6rem;
+    border-radius: $radius-full;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    margin: 0 $spacing-xs;
+}
+
+// Links with icons
+.link-with-icon {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: $font-weight-medium;
+    transition: color $transition-base;
+    
+    &:hover {
+        color: $primary-dark;
+        text-decoration: none;
+    }
+}
+
+// Contact items
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    padding: $spacing-lg;
+    background: $bg-primary;
+    border: 1px solid $border-color;
+    border-radius: $radius-lg;
+    text-decoration: none;
+    transition: all $transition-base;
+    color: inherit;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: $shadow-lg;
+        text-decoration: none;
+        color: inherit;
+        border-color: $primary-color;
+    }
+    
+    h4 {
+        margin: 0 0 $spacing-xs 0;
+        font-weight: $font-weight-semibold;
+        color: $text-primary;
+    }
+    
+    p {
+        margin: 0;
+        color: $text-muted;
+        font-size: $font-size-sm;
+    }
+    
+    &.email svg { color: $email-color; }
+    &.linkedin svg { color: $linkedin-color; }
+    &.scholar svg { color: $scholar-color; }
+    &.github svg { color: $github-color; }
+}
+
+// Animated hover effects
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    animation: fadeInUp 0.6s ease-out;
+}
+

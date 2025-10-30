@@ -1,14 +1,27 @@
 # Site settings
-title: ""
-description: "AI and high-performance computing research, hands-on learnings, and practical insights"
+title: "Waqar Ahmed - AI & High-Performance Computing"
+description: "Exploring AI optimization, GPU acceleration, and computer vision. Sharing research insights, practical learnings, and hands-on experiences from making AI work in the real world—from domain adaptation to production ML systems."
 baseurl: ""
 url: "https://waqarahmed89.github.io"
 author:
   name: "Waqar Ahmed"
+  title: "AI Researcher & High-Performance Computing Specialist"
+  organization: "AMD"
   email: "waqarahmed4544@gmail.com"
   linkedin: "https://www.linkedin.com/in/waqarahmed1989/"
   github: "https://github.com/waqarahmed89"
   scholar: "https://scholar.google.com/citations?user=2I-M3S0AAAAJ&hl=en&oi=ao"
+  location: "Global"
+  
+# SEO and Social
+keywords: "AI, machine learning, GPU computing, computer vision, high-performance computing, CUDA, deep learning, domain adaptation, neural networks, AMD"
+twitter_username: ""
+social:
+  name: "Waqar Ahmed"
+  links:
+    - https://www.linkedin.com/in/waqarahmed1989/
+    - https://github.com/waqarahmed89
+    - https://scholar.google.com/citations?user=2I-M3S0AAAAJ&hl=en&oi=ao
 
 # Build settings
 markdown: kramdown

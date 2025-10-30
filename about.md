@@ -20,9 +20,9 @@ title: About
         <!-- Introduction -->
         <section class="intro-section">
             <div class="intro-text">
-                <p class="lead">I'm passionate about pushing the boundaries of artificial intelligence and high-performance computing. My work bridges cutting-edge research with practical implementation, focusing on making AI systems faster, more efficient, and more accessible.</p>
+                <p class="lead">I'm passionate about making AI systems faster, more efficient, and more practical. Currently at AMD, I work on GPU-accelerated deep learning, domain adaptation techniques, and high-performance computing challenges that bridge research innovation with real-world deployment.</p>
                 
-                <p>With a Ph.D in Computer Vision and years of experience in both academia and industry, I specialize in developing novel algorithms and optimization techniques that solve real-world challenges in AI and computational systems.</p>
+                <p>With a Ph.D. in Computer Vision and 15+ publications spanning top conferences and journals, my research focuses on making AI work better in practice—whether that's adapting models to new environments without retraining, optimizing neural architectures for edge devices, or squeezing every bit of performance from GPU hardware. This site is where I share what I've learned along the way.</p>
             </div>
         </section>
 
@@ -40,8 +40,8 @@ title: About
                             <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
                         </svg>
                     </div>
-                    <h3>Computer Vision & Pattern Analysis</h3>
-                    <p>Advanced algorithms for image processing, object detection, and visual pattern recognition with focus on domain adaptation and continual learning.</p>
+                    <h3>Computer Vision & Deep Learning</h3>
+                    <p>Research and implementation of object detection, image segmentation, and classification systems. Particularly interested in domain adaptation—making models work across different environments without expensive retraining.</p>
                 </div>
                 
                 <div class="expertise-item">
@@ -52,8 +52,8 @@ title: About
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
                     </div>
-                    <h3>GPU Computing & Acceleration</h3>
-                    <p>High-performance parallel computing, CUDA optimization, and GPU architecture design for AI workloads and scientific computing.</p>
+                    <h3>GPU Acceleration & CUDA Optimization</h3>
+                    <p>Deep diving into GPU performance—custom CUDA kernels, memory optimization, and architecture-specific tuning. Experience with both AMD and NVIDIA hardware, distributed training setups, and getting models to run fast in production.</p>
                 </div>
                 
                 <div class="expertise-item">
@@ -62,8 +62,8 @@ title: About
                             <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
                         </svg>
                     </div>
-                    <h3>Machine Learning & AI</h3>
-                    <p>Deep learning architectures, neural network optimization, and collaborative learning systems with applications in computer vision and NLP.</p>
+                    <h3>Production ML Systems</h3>
+                    <p>Building and deploying complete ML pipelines—from data processing and training to inference and monitoring. Working with PyTorch, TensorFlow, ONNX, and TensorRT to make models actually work in production environments.</p>
                 </div>
                 
                 <div class="expertise-item">
@@ -81,27 +81,50 @@ title: About
                             <line x1="1" y1="14" x2="4" y2="14"></line>
                         </svg>
                     </div>
-                    <h3>Hardware Architecture</h3>
-                    <p>FPGA design, hardware acceleration for AI, and optimization of compute architectures for high-performance applications.</p>
+                    <h3>High-Performance Computing</h3>
+                    <p>Working with distributed computing systems, parallel processing, and hardware acceleration. Experience includes MPI workloads, FPGA implementations, and exploring ROCm/OpenCL for compute-intensive applications.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Research Philosophy -->
+        <!-- Professional Experience -->
+        <section class="expertise-section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="background-content">
+                <div class="degree-item">
+                    <div class="degree-info">
+                        <h3>AI Researcher & High-Performance Computing Specialist</h3>
+                        <p class="institution">AMD</p>
+                        <p class="year">2022 - Present</p>
+                        <p class="description">Working on AI optimization and GPU acceleration for deep learning workloads. Focus areas include CUDA kernel optimization, domain adaptation for cross-platform AI deployment, and exploring how research innovations can improve GPU compute performance in practice.</p>
+                    </div>
+                </div>
+                <div class="degree-item">
+                    <div class="degree-info">
+                        <h3>Research Scientist - Computer Vision</h3>
+                        <p class="institution">Pattern Analysis & Computer Vision Lab</p>
+                        <p class="year">2018 - 2022</p>
+                        <p class="description">Researched source-free domain adaptation for computer vision, published 10+ papers in conferences like WACV and ICIAP, and explored lightweight neural architectures for resource-constrained environments. Collaborated on research projects in healthcare imaging and autonomous systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Approach -->
         <section class="philosophy-section">
-            <h2 class="section-title">Research Philosophy</h2>
+            <h2 class="section-title">Research Interests & Approach</h2>
             <div class="philosophy-content">
                 <div class="philosophy-item">
-                    <h3>🔬 Research Excellence</h3>
-                    <p>Pursuing fundamental breakthroughs in AI and computing that push the boundaries of what's possible while maintaining rigorous scientific standards.</p>
+                    <h3>Theory Meets Practice</h3>
+                    <p>I'm most excited by research that solves real problems. Whether it's making models adapt to new environments or getting them to run faster on actual hardware, I focus on techniques that work beyond the paper.</p>
                 </div>
                 <div class="philosophy-item">
-                    <h3>🚀 Practical Impact</h3>
-                    <p>Bridging the gap between research and real-world applications, ensuring innovations translate into tangible benefits for industry and society.</p>
+                    <h3>Performance Matters</h3>
+                    <p>From GPU kernels to neural architecture design, I care deeply about making things fast and efficient. Real-world constraints—latency, memory, power—make the challenge interesting and the solutions meaningful.</p>
                 </div>
                 <div class="philosophy-item">
-                    <h3>🤝 Collaborative Innovation</h3>
-                    <p>Fostering interdisciplinary collaboration and knowledge sharing to accelerate progress in AI and high-performance computing.</p>
+                    <h3>Learning Through Building</h3>
+                    <p>The best way to understand something is to implement it. I believe in hands-on exploration, measuring everything, and sharing both successes and the lessons from what didn't work.</p>
                 </div>
             </div>
         </section>
@@ -132,15 +155,15 @@ title: About
         <!-- Blog Mission -->
         <section class="mission-section">
             <div class="mission-box">
-                <h2 class="mission-title">Blog Mission</h2>
-                <p class="mission-text">This blog serves as a knowledge hub where I share research insights, practical tutorials, and hands-on experiences in AI and high-performance computing. My goal is to decode complex concepts, share practical implementations, and contribute to the advancement of computational intelligence.</p>
+                <h2 class="mission-title">Why This Blog Exists</h2>
+                <p class="mission-text">I created this space to share what I'm learning about AI, GPU computing, and making research work in practice. You'll find deep dives into optimization techniques, lessons from deploying models in production, explanations of domain adaptation methods, and honest accounts of what works (and what doesn't) when building real systems.</p>
             </div>
         </section>
 
         <!-- Contact & Collaboration -->
         <section class="contact-section">
             <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-intro">I'm always interested in discussing research opportunities, collaborations, and innovative projects in AI and high-performance computing.</p>
+            <p class="contact-intro">Always happy to discuss AI research, GPU optimization techniques, or interesting technical challenges. Whether you're working on similar problems or just want to chat about domain adaptation and performance engineering, feel free to reach out.</p>
             
             <div class="contact-grid">
                 <a href="{{ site.author.email | prepend: 'mailto:' }}" class="contact-item email">
@@ -189,373 +212,9 @@ title: About
         <!-- Disclaimer -->
         <section class="disclaimer-section">
             <div class="disclaimer-box">
-                <h3>📋 Disclaimer</h3>
-                <p>All opinions and views expressed on this blog are my own and do not represent the views of AMD or any other organization I may be affiliated with.</p>
+                <h3>Disclaimer</h3>
+                <p>All opinions and views expressed on this website are my own and do not represent the views of AMD or any other organization I may be affiliated with.</p>
             </div>
         </section>
     </div>
 </div>
-
-<style>
-.about-page {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.about-hero {
-    text-align: center;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, #f8faff 0%, #e6f3ff 100%);
-    margin: -2rem -2rem 3rem -2rem;
-    border-radius: 0 0 20px 20px;
-}
-
-.page-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0 0 1rem 0;
-}
-
-.hero-subtitle {
-    font-size: 1.3rem;
-    color: #3182ce;
-    font-weight: 500;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.2;
-}
-
-.subtitle-line {
-    display: block;
-}
-
-.subtitle-connector {
-    display: block;
-    font-size: 1.1rem;
-    color: #3182ce;
-    margin: 0.2rem 0;
-}
-
-.about-content {
-    padding: 0 2rem;
-}
-
-.intro-section {
-    margin-bottom: 4rem;
-}
-
-.lead {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #2d3748;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-.intro-text p {
-    color: #4a5568;
-    line-height: 1.7;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #1a1a1a;
-    margin-bottom: 2rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: #3182ce;
-}
-
-.expertise-section {
-    margin-bottom: 4rem;
-}
-
-.expertise-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.expertise-item {
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-}
-
-.expertise-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-}
-
-.expertise-icon {
-    color: #3182ce;
-    margin-bottom: 1rem;
-}
-
-.expertise-item h3 {
-    color: #1a1a1a;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.expertise-item p {
-    color: #4a5568;
-    line-height: 1.6;
-}
-
-.philosophy-section {
-    margin-bottom: 4rem;
-    background: #f8faff;
-    padding: 3rem 2rem;
-    border-radius: 12px;
-    margin-left: -2rem;
-    margin-right: -2rem;
-}
-
-.philosophy-content {
-    display: grid;
-    gap: 2rem;
-}
-
-.philosophy-item h3 {
-    color: #1a1a1a;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.philosophy-item p {
-    color: #4a5568;
-    line-height: 1.6;
-}
-
-.background-section {
-    margin-bottom: 4rem;
-}
-
-.background-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.degree-item {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-left: 4px solid #3182ce;
-    border-radius: 8px;
-    padding: 2rem;
-}
-
-.degree-info h3 {
-    color: #1a1a1a;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.institution {
-    color: #3182ce;
-    font-weight: 500;
-    margin-bottom: 0.25rem;
-}
-
-.year {
-    color: #718096;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.description {
-    color: #4a5568;
-    line-height: 1.6;
-}
-
-.mission-section {
-    margin-bottom: 4rem;
-}
-
-.mission-box {
-    background: linear-gradient(135deg, #3182ce 0%, #4285f4 100%);
-    color: white;
-    padding: 3rem;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.mission-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.mission-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.contact-section {
-    margin-bottom: 4rem;
-}
-
-.contact-intro {
-    color: #4a5568;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    color: inherit;
-}
-
-.contact-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: inherit;
-}
-
-.contact-item.email svg { color: #ea4335; }
-.contact-item.linkedin svg { color: #0077b5; }
-.contact-item.scholar svg { color: #4285f4; }
-.contact-item.github svg { color: #333; }
-
-.contact-item h4 {
-    margin: 0 0 0.25rem 0;
-    font-weight: 600;
-    color: #1a1a1a;
-}
-
-.contact-item p {
-    margin: 0;
-    color: #718096;
-    font-size: 0.9rem;
-}
-
-.disclaimer-section {
-    margin-bottom: 2rem;
-}
-
-.disclaimer-box {
-    background: #fff3cd;
-    border: 1px solid #ffeeba;
-    border-radius: 8px;
-    padding: 1.5rem;
-}
-
-.disclaimer-box h3 {
-    color: #856404;
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-}
-
-.disclaimer-box p {
-    color: #856404;
-    margin: 0;
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-    .about-content {
-        padding: 0 1rem;
-    }
-    
-    .about-hero {
-        margin: -2rem -1rem 2rem -1rem;
-        padding: 2rem 0;
-    }
-    
-    .page-title {
-        font-size: 2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .subtitle-connector {
-        font-size: 1rem;
-    }
-    
-    .expertise-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .philosophy-section {
-        margin-left: -1rem;
-        margin-right: -1rem;
-        padding: 2rem 1rem;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .mission-box {
-        padding: 2rem 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-hero {
-        margin: -2rem -0.5rem 1.5rem -0.5rem;
-        padding: 1.5rem 0;
-    }
-    
-    .page-title {
-        font-size: 1.8rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-    
-    .subtitle-connector {
-        font-size: 0.9rem;
-    }
-    
-    .expertise-item {
-        padding: 1.5rem;
-    }
-    
-    .mission-box {
-        padding: 1.5rem 1rem;
-    }
-}
-</style>

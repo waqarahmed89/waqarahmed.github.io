@@ -7,9 +7,9 @@ title: Publications
     <h1>Publications</h1>
     
     <div class="publications-intro">
-        <p>My research advances the frontiers of <strong>Artificial Intelligence and Computer Vision</strong> through innovative algorithms and high-performance computing solutions. I specialize in developing novel approaches for <strong>domain adaptation, collaborative learning, and GPU-accelerated AI systems</strong> that bridge theoretical research with practical applications in healthcare, autonomous systems, and computational intelligence.</p>
+        <p>My research focuses on making AI systems more practical and efficient. With <strong>15+ peer-reviewed publications</strong> in venues like IEEE WACV, ICIAP, and Computers in Biology and Medicine, I explore <strong>domain adaptation, neural architecture design, and GPU acceleration</strong>—always asking how we can make models work better in real-world scenarios.</p>
         
-        <p class="research-highlight">From pioneering source-free domain adaptation techniques to designing lightweight neural architectures for medical imaging, my work contributes to making AI more robust, efficient, and accessible across diverse real-world scenarios.</p>
+        <p class="research-highlight">I'm particularly interested in techniques that solve deployment challenges: domain adaptation that eliminates costly retraining, lightweight architectures for resource-constrained devices, and optimization methods that make systems actually fast in practice.</p>
         
         <div class="scholar-link">
             <a href="{{ site.author.scholar }}" target="_blank" class="btn-scholar">
@@ -24,23 +24,23 @@ title: Publications
 
     <div class="publications-content">
         <div class="research-areas">
-            <h2>Research Areas</h2>
+            <h2>Research Focus Areas</h2>
             <div class="research-grid">
                 <div class="research-item">
-                    <h3>Computer Vision</h3>
-                    <p>Advanced image and video processing algorithms, object detection, and recognition systems.</p>
+                    <h3>Domain Adaptation</h3>
+                    <p>Techniques for making models work across different environments without retraining—a critical challenge for practical AI deployment that I find endlessly fascinating.</p>
                 </div>
                 <div class="research-item">
-                    <h3>Pattern Analysis</h3>
-                    <p>Machine learning approaches for pattern recognition and data analysis in complex systems.</p>
+                    <h3>Medical Imaging</h3>
+                    <p>Computer vision for healthcare applications, particularly retinal vessel segmentation and diagnostic support systems designed to work on resource-constrained devices.</p>
                 </div>
                 <div class="research-item">
-                    <h3>AI Acceleration</h3>
-                    <p>High-performance computing solutions for AI workloads and optimization techniques.</p>
+                    <h3>GPU Optimization</h3>
+                    <p>Deep dives into making neural networks faster through kernel optimization, memory management, and architecture-specific tuning for both AMD and NVIDIA hardware.</p>
                 </div>
                 <div class="research-item">
-                    <h3>GPU Computing</h3>
-                    <p>Parallel processing architectures and CUDA-based acceleration for computational tasks.</p>
+                    <h3>Efficient Architectures</h3>
+                    <p>Designing neural networks that maintain accuracy while being practical for deployment—exploring hypercomplex networks, lightweight designs, and efficient training methods.</p>
                 </div>
             </div>
         </div>
@@ -188,175 +188,16 @@ title: Publications
         </div>
 
         <div class="collaboration-section">
-            <h2>Research Collaboration</h2>
-            <p>I'm always interested in collaborating on research projects related to:</p>
+            <h2>Collaboration & Discussion</h2>
+            <p>I'm always interested in discussing research and technical challenges in:</p>
             <ul>
-                <li>GPU acceleration for AI and machine learning workloads</li>
-                <li>Computer vision applications in real-world scenarios</li>
-                <li>High-performance computing optimization</li>
-                <li>Pattern recognition in large-scale datasets</li>
+                <li>Domain adaptation and transfer learning approaches</li>
+                <li>GPU optimization and CUDA/ROCm kernel development</li>
+                <li>Computer vision systems for medical imaging and other applications</li>
+                <li>Neural architecture design and efficiency improvements</li>
+                <li>Practical ML deployment and performance engineering</li>
             </ul>
-            <p>Feel free to <a href="mailto:{{ site.author.email }}">reach out</a> if you're interested in collaboration opportunities.</p>
+            <p>Whether you're working on similar problems, have questions about my research, or just want to discuss interesting technical challenges, feel free to <a href="mailto:{{ site.author.email }}">reach out</a>.</p>
         </div>
     </div>
 </div>
-
-<style>
-.publications-intro {
-    margin-bottom: 3rem;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.publications-intro p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #4a5568;
-    margin-bottom: 1.5rem;
-}
-
-.research-highlight {
-    background: #f8faff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #3182ce;
-    font-style: italic;
-    color: #2d3748 !important;
-    margin-top: 2rem !important;
-}
-
-.scholar-link {
-    margin-top: 2rem;
-}
-
-.btn-scholar {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background: #4285f4;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-}
-
-.btn-scholar:hover {
-    background: #3367d6;
-    color: white;
-    text-decoration: none;
-}
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.research-item {
-    padding: 1.5rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #3182ce;
-}
-
-.research-item h3 {
-    color: #1a1a1a;
-    margin-bottom: 1rem;
-}
-
-.research-item p {
-    color: #4a5568;
-    line-height: 1.6;
-}
-
-.publications-section {
-    margin: 4rem 0;
-}
-
-.note {
-    background: #e6f3ff;
-    padding: 1rem;
-    border-radius: 6px;
-    border-left: 4px solid #3182ce;
-    margin: 1rem 0 2rem 0;
-    font-style: italic;
-}
-
-.publication-categories h3 {
-    color: #3182ce;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #e2e8f0;
-}
-
-.publication-item {
-    margin: 1.5rem 0;
-    padding: 1.5rem;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.publication-item.highlight {
-    border-left: 4px solid #3182ce;
-    background: #f8faff;
-}
-
-.publication-item h4 {
-    color: #1a1a1a;
-    font-size: 1.1rem;
-    line-height: 1.4;
-    margin: 0 0 0.5rem 0;
-    font-weight: 600;
-}
-
-.publication-item .authors {
-    color: #4a5568;
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    line-height: 1.4;
-}
-
-.publication-item .venue {
-    color: #718096;
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    font-style: italic;
-}
-
-
-
-.collaboration-section {
-    margin-top: 4rem;
-    padding: 2rem;
-    background: #f7fafc;
-    border-radius: 8px;
-}
-
-.collaboration-section h2 {
-    color: #1a1a1a;
-    margin-bottom: 1rem;
-}
-
-.collaboration-section ul {
-    margin: 1rem 0;
-}
-
-.collaboration-section li {
-    margin: 0.5rem 0;
-    color: #4a5568;
-}
-
-@media (max-width: 768px) {
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>

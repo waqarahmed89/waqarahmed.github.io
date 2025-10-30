@@ -1,0 +1,73 @@
+// Base styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family-base;
+    color: $text-secondary;
+    background-color: $bg-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-semibold;
+    line-height: 1.2;
+    margin-bottom: $spacing-md;
+    color: $text-primary;
+}
+
+h1 { font-size: $font-size-3xl; }
+h2 { font-size: $font-size-2xl; }
+h3 { font-size: $font-size-xl; }
+h4 { font-size: $font-size-lg; }
+h5 { font-size: $font-size-md; }
+h6 { font-size: $font-size-base; }
+
+p {
+    margin-bottom: $spacing-lg;
+    color: $text-secondary;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    transition: color $transition-base;
+    
+    &:hover {
+        color: $primary-dark;
+        text-decoration: underline;
+    }
+}
+
+strong {
+    font-weight: $font-weight-semibold;
+    color: $text-primary;
+}
+
+// Container
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 $spacing-xl;
+    
+    @media (max-width: $breakpoint-tablet) {
+        padding: 0 $spacing-md;
+    }
+}
+
+// Utilities
+.text-center { text-align: center; }
+.mb-4 { margin-bottom: $spacing-xl; }
+.mt-4 { margin-top: $spacing-xl; }
+
