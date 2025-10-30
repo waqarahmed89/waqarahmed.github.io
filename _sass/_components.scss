@@ -46,11 +46,24 @@
         transform: translateY(-4px);
         box-shadow: $shadow-lg;
     }
+    
+    @media (max-width: $breakpoint-tablet) {
+        padding: $spacing-lg;
+    }
+    
+    @media (max-width: $breakpoint-mobile) {
+        padding: $spacing-md;
+        border-radius: $radius-lg;
+    }
 }
 
 // Section styling
 .section {
     margin: $spacing-3xl 0;
+    
+    @media (max-width: $breakpoint-tablet) {
+        margin: $spacing-xl 0;
+    }
     
     &-header {
         display: flex;
@@ -64,6 +77,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: $spacing-md;
+            margin-bottom: $spacing-md;
         }
     }
     
@@ -82,6 +96,14 @@
             width: 60px;
             height: 3px;
             background: $primary-color;
+        }
+        
+        @media (max-width: $breakpoint-tablet) {
+            font-size: $font-size-xl;
+        }
+        
+        @media (max-width: $breakpoint-mobile) {
+            font-size: $font-size-lg;
         }
     }
 }
@@ -131,6 +153,12 @@
             background: $email-color;
             color: white;
             &:hover { opacity: 0.9; color: white; }
+        }
+        
+        @media (max-width: $breakpoint-mobile) {
+            padding: $spacing-xs $spacing-sm;
+            font-size: $font-size-xs;
+            gap: $spacing-xs;
         }
     }
 }
@@ -185,6 +213,7 @@
         margin: 0 0 $spacing-xs 0;
         font-weight: $font-weight-semibold;
         color: $text-primary;
+        font-size: $font-size-base;
     }
     
     p {
@@ -197,6 +226,24 @@
     &.linkedin svg { color: $linkedin-color; }
     &.scholar svg { color: $scholar-color; }
     &.github svg { color: $github-color; }
+    
+    @media (max-width: $breakpoint-mobile) {
+        padding: $spacing-md;
+        gap: $spacing-sm;
+        
+        h4 {
+            font-size: $font-size-sm;
+        }
+        
+        p {
+            font-size: $font-size-xs;
+        }
+        
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
 
 // Animated hover effects

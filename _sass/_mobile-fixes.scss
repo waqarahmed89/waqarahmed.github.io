@@ -1,0 +1,83 @@
+// Mobile-specific fixes and improvements
+
+// Prevent horizontal scroll
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+// Better touch targets on mobile
+@media (max-width: $breakpoint-mobile) {
+    a, button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    // Improve readability
+    p, li {
+        font-size: $font-size-base;
+        line-height: 1.6;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+}
+
+// Prevent text overflow
+* {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+// Better grid layouts on mobile
+@media (max-width: $breakpoint-mobile) {
+    .expertise-grid,
+    .research-grid,
+    .posts-grid,
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: $spacing-md;
+    }
+}
+
+// Improve spacing on small screens
+@media (max-width: $breakpoint-mobile) {
+    section {
+        margin-bottom: $spacing-lg;
+    }
+    
+    .expertise-item,
+    .research-item,
+    .post-card,
+    .publication-highlight {
+        margin-bottom: $spacing-md;
+    }
+}
+
+// Better image handling
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Improve table responsiveness
+@media (max-width: $breakpoint-mobile) {
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+

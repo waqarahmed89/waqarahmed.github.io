@@ -64,6 +64,10 @@ strong {
     @media (max-width: $breakpoint-tablet) {
         padding: 0 $spacing-md;
     }
+    
+    @media (max-width: $breakpoint-mobile) {
+        padding: 0 $spacing-sm;
+    }
 }
 
 // Utilities
