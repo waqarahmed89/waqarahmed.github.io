@@ -1,7 +1,7 @@
 # Site settings
 title: "Pushing the Limits of AI & High-Performance Computing"
 description: "AI and high-performance computing research, hands-on learnings, and practical insights"
-baseurl: "/waqarahmed.github.io"
+baseurl: ""
 url: "https://waqarahmed89.github.io"
 author:
   name: "Waqar Ahmed"
