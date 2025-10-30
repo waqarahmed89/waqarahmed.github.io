@@ -7,7 +7,9 @@ title: Publications
     <h1>Publications</h1>
     
     <div class="publications-intro">
-        <p>My research focuses on <strong>Pattern Analysis & Computer Vision</strong>, with applications in AI and high-performance computing. Below is a selection of my published work.</p>
+        <p>My research advances the frontiers of <strong>Artificial Intelligence and Computer Vision</strong> through innovative algorithms and high-performance computing solutions. I specialize in developing novel approaches for <strong>domain adaptation, collaborative learning, and GPU-accelerated AI systems</strong> that bridge theoretical research with practical applications in healthcare, autonomous systems, and computational intelligence.</p>
+        
+        <p class="research-highlight">From pioneering source-free domain adaptation techniques to designing lightweight neural architectures for medical imaging, my work contributes to making AI more robust, efficient, and accessible across diverse real-world scenarios.</p>
         
         <div class="scholar-link">
             <a href="{{ site.author.scholar }}" target="_blank" class="btn-scholar">
@@ -203,6 +205,26 @@ title: Publications
 .publications-intro {
     margin-bottom: 3rem;
     text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.publications-intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.research-highlight {
+    background: #f8faff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3182ce;
+    font-style: italic;
+    color: #2d3748 !important;
+    margin-top: 2rem !important;
 }
 
 .scholar-link {
